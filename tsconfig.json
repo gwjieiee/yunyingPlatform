@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "isolatedModules":true,
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client","node", "element-plus/global"],
+    "typeRoots": [ "../node_modules/@types" ],
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "allowJs": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/store/modules/user.ts", "src/utils/system/request.ts", "src/router/permission.ts", "src/router/permission.ts"]
+}
